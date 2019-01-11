@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BeVeCo</string>
+    <string name="strBtn1">길찾기 시작</string>
+    <string name="textview_message" formatted="false"></string>
+</resources>

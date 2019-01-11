@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:text="BEVECO"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/searchText"
+            android:layout_width="310dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:hint="출발지를 입력해주세요"
+            android:inputType="text"
+            android:textDirection="firstStrong"
+            android:textSize="21dp" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="78dp"
+            android:layout_height="55dp"
+            android:layout_gravity="right"
+            android:text="검색"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_layout_tmap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/findShortest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 최단경로 찾기" />
+
+        <Button
+            android:id="@+id/zoomIn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="right"
+            android:layout_marginLeft="226dp"
+            android:layout_marginBottom="112dp"
+            android:layout_toRightOf="@id/findShortest"
+            android:text="+"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/zoomOut"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="right"
+            android:layout_marginLeft="226dp"
+            android:layout_marginBottom="54dp"
+            android:layout_toRightOf="@id/findShortest"
+            android:text="-"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginEnd="62dp"
+            android:layout_marginRight="62dp"
+            android:layout_marginBottom="57dp"
+            android:text="B" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="-56dp"
+            android:text="R" />
+
+        <Button
+            android:id="@+id/showLists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="300dp"
+            android:layout_marginRight="-100dp"
+            android:layout_toLeftOf="@id/findShortest"
+            android:text="길 안내" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/searchListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"/>
+
+</LinearLayout>
+
